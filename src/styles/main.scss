@@ -1,0 +1,14 @@
+// Custom variables
+@use "variables.scss";
+
+// General app base styles
+@use "base.scss";
+
+// Hero section
+@use "./sections/hero.scss";
+
+// Header section
+@use "./sections/header.scss";
+
+// RESPONSIVE MEDIA QUERY
+@use "./responsive.scss";

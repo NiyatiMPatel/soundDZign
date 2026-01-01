@@ -1,0 +1,61 @@
+@use "./variables" as var;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var.$font-body;
+  line-height: 1;
+  font-weight: 400;
+  color: var.$brand-white;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: inherit;
+  display: block;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 5rem 0;
+
+  &#hero {
+    padding: 0;
+  }
+  &#topics {
+    background-color: var.$brand-black;
+  }
+  &#statistics {
+    background-color: var.$brand-charcoal;
+  }
+  &#posts {
+    background-color: var.$brand-coral;
+  }
+  &#testimonials {
+    background-color: var.$brand-charcoal;
+  }
+  &#footer {
+    background-color: var.$brand-black;
+  }
+}
+
+.container {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
