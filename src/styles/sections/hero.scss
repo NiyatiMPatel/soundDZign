@@ -35,16 +35,6 @@
         font-size: 1rem;
         font-family: var.$font-heading;
         font-weight: 800;
-
-        &::after {
-          content: "";
-          width: 60px;
-          height: 4px;
-          background-color: var.$brand-red;
-          position: absolute;
-          bottom: -8px;
-          left: 0;
-        }
       }
       .hero-title {
         font-weight: 700;

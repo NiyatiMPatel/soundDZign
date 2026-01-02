@@ -1,5 +1,13 @@
 @use "./variables" as var;
 
+@media (max-width: 1199.98px) {
+  .topic-content {
+    &::after {
+      right: -1rem;
+    }
+  }
+}
+
 @media (max-width: 991.98px) {
   // HERO START//
   .hero-wrapper {
@@ -17,6 +25,14 @@
     }
   }
   // HERO END//
+
+  // TOPICS START //
+  .topic-content {
+    .topic-image {
+      height: 100%;
+    }
+  }
+  // TOPICS END //
 }
 
 @media (max-width: 767.98px) {
@@ -64,6 +80,7 @@
       transform: translateY(35%);
     }
   }
+  // HEADER END
 }
 
 @media (max-width: 575.98px) {
@@ -93,6 +110,14 @@
     }
   }
   // HERO END//
+
+  // TOPIC START //
+  .topic-content {
+    &::after {
+      right: 2rem;
+    }
+  }
+  // TOPIC END //
 
   // FOOTER START //
   .copyright {

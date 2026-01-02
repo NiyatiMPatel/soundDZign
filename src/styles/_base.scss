@@ -43,6 +43,10 @@ h6 {
   padding: 0;
 }
 
+h2 {
+  font-family: var.$font-heading;
+}
+
 section {
   padding: 5rem 0;
 
@@ -69,4 +73,14 @@ section {
 .container {
   padding-left: 0 !important;
   padding-right: 0 !important;
+}
+
+.eyeshadow::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background-color: var.$brand-red;
+  position: absolute;
+  bottom: -8px;
+  left: 0;
 }

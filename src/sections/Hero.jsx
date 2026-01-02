@@ -9,7 +9,7 @@ const Hero = () => {
         <div className="grid-parent">
           <Header />
           <div className="hero-content">
-            <p className="hero-eyeshadow m-0 position-relative">
+            <p className="hero-eyeshadow eyeshadow m-0 position-relative">
               Sound Design Masterclass
             </p>
             <h1 className="hero-title">Learn the Art of Sound Design</h1>
