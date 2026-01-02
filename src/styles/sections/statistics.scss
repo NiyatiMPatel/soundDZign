@@ -1,0 +1,26 @@
+@use "../variables" as var;
+
+.stats-content {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 88px;
+    height: 60px;
+    top: -2rem;
+    left: -2rem;
+
+    /* Encoded SVG */
+    background-image: url("data:image/svg+xml,%3Csvg width='88' height='60' viewBox='0 0 88 60' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='8' y='60' width='8' height='60' transform='rotate(-180 8 60)' fill='%23E63946'/%3E%3Crect x='88' y='7.6932e-06' width='8' height='80' transform='rotate(90 88 7.6932e-06)' fill='%23E63946'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+  }
+}
+
+.stats_count {
+  font-size: clamp(2rem, 1.9rem + 0.5vw, 2.5rem);
+  font-weight: 900;
+}
+
+.stats_title {
+  font-size: clamp(1.5rem, 1.425rem + 0.375vw, 1.875rem);
+  font-weight: 700;
+}

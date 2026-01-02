@@ -6,6 +6,12 @@
       right: -1rem;
     }
   }
+
+  .stats-content {
+    &::after {
+      left: -1rem;
+    }
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -118,6 +124,19 @@
     }
   }
   // TOPIC END //
+
+  // STAISTICS START //
+  .stats-content {
+    gap: 5.25rem;
+
+    &::after {
+      left: 2rem;
+    }
+  }
+
+  // STAISTICS END //
+
+  // STAISTICS START //
 
   // FOOTER START //
   .copyright {
