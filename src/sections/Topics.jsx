@@ -5,6 +5,10 @@ const Topics = () => {
   const [topic, setTopic] = useState(topics[0].src);
 
   const clickHandler = (item) => {
+    // Check if screen is smaller than your breakpoint
+    if (window.innerWidth <= 768) {
+      return; // Do nothing
+    }
     setTopic(item.src);
   };
 
