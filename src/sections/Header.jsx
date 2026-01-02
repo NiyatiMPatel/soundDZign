@@ -2,6 +2,7 @@ import { useState } from "react";
 import menuIcon from "../assets/menu-icon.svg";
 import closeIcon from "../assets/close-icon.svg";
 import { NavLink } from "react-router";
+import BrandLogo from "../component/BrandLogo";
 const Header = () => {
   const [isExpanded, setIsExpanded] = useState(false);
   const toggleMenu = () => setIsExpanded((prev) => !prev);
@@ -9,10 +10,7 @@ const Header = () => {
   return (
     <header>
       <nav className="navbar navbar-expand-md p-0">
-        <NavLink to="/" className="navbar-brand">
-          Sound<span className="navbar-sub-brand">DZign</span>
-        </NavLink>
-        {/* <div className="collapse navbar-collapse" id="navbarTogglerDemo01"> */}
+        <BrandLogo />
         <div
           className={`collapse navbar-collapse ${isExpanded ? "show" : ""}`}
           id="navbarTogglerDemo01"

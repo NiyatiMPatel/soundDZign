@@ -1,0 +1,22 @@
+@use "../variables" as var;
+
+.social-list,
+.copyright {
+  margin-top: 1.875rem;
+}
+
+.footer-title {
+  color: var.$brand-coral;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.footer-list {
+  margin-top: 0.688rem;
+  padding-left: 1rem;
+  font-size: 1rem;
+
+  li:not(:last-child) {
+    margin-bottom: 0.438rem;
+  }
+}

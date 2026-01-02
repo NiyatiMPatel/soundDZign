@@ -4,11 +4,17 @@
 // General app base styles
 @use "base.scss";
 
+// Brand Logo styles
+@use "brandLogo.scss";
+
 // Hero section
 @use "./sections/hero.scss";
 
 // Header section
 @use "./sections/header.scss";
+
+// Header section
+@use "./sections/footer.scss";
 
 // RESPONSIVE MEDIA QUERY
 @use "./responsive.scss";

@@ -1,0 +1,9 @@
+@use "./variables" as var;
+
+.brand {
+  color: var.$brand-white;
+  font-weight: 800;
+  .sub-brand {
+    color: var.$brand-coral;
+  }
+}
