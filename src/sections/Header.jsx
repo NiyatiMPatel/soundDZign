@@ -5,8 +5,13 @@ import { NavLink } from "react-router";
 import BrandLogo from "../component/BrandLogo";
 const Header = () => {
   const [isExpanded, setIsExpanded] = useState(false);
-  const toggleMenu = () => setIsExpanded((prev) => !prev);
-  const closeMenu = () => setIsExpanded(false);
+  const toggleMenu = () => {
+    // Check if screen is greater than your breakpoint
+    if (window.innerWidth >= 768) {
+      return; // Do nothing
+    }
+    setIsExpanded((prev) => !prev);
+  };
   return (
     <header>
       <nav className="navbar navbar-expand-md p-0">
@@ -22,7 +27,7 @@ const Header = () => {
                 className={({ isActive }) =>
                   isActive ? "nav-link active" : "nav-link"
                 }
-                onClick={closeMenu}
+                onClick={toggleMenu}
               >
                 About
               </NavLink>
@@ -33,7 +38,7 @@ const Header = () => {
                 className={({ isActive }) =>
                   isActive ? "nav-link active" : "nav-link"
                 }
-                onClick={closeMenu}
+                onClick={toggleMenu}
               >
                 Course Details
               </NavLink>
@@ -44,7 +49,7 @@ const Header = () => {
                 className={({ isActive }) =>
                   isActive ? "nav-link active" : "nav-link"
                 }
-                onClick={closeMenu}
+                onClick={toggleMenu}
               >
                 Blog
               </NavLink>
@@ -55,7 +60,7 @@ const Header = () => {
                 className={({ isActive }) =>
                   isActive ? "nav-link active" : "nav-link"
                 }
-                onClick={closeMenu}
+                onClick={toggleMenu}
               >
                 Testimonials
               </NavLink>
