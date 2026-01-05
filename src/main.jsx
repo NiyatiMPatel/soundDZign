@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { BrowserRouter } from "react-router";
+// import { BrowserRouter } from "react-router";
 import App from "./App.jsx";
 // Import all of Bootstrap's JS
 // Import Bootstrap JS (side effects only)
@@ -10,8 +10,8 @@ import "./styles/main.scss";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    {/* <BrowserRouter> */}
+    <App />
+    {/* </BrowserRouter> */}
   </StrictMode>
 );
