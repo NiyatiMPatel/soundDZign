@@ -8,7 +8,7 @@
   }
 
   .stats-content {
-    &::after {
+    &::before {
       left: -1rem;
     }
   }
@@ -39,6 +39,19 @@
     }
   }
   // TOPICS END //
+
+  // POSTS START //
+  .post-column:last-child:nth-child(odd) {
+    flex: 0 0 100%;
+    max-width: 100%;
+
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+  // POSTS END //
 }
 
 @media (max-width: 767.98px) {
@@ -87,6 +100,14 @@
     }
   }
   // HEADER END
+
+  // POSTS START //
+  .post-column:last-child:nth-child(odd) {
+    .card-img-top {
+      height: unset;
+    }
+  }
+  // POSTS END //
 }
 
 @media (max-width: 575.98px) {
@@ -127,16 +148,12 @@
 
   // STAISTICS START //
   .stats-content {
-    gap: 5.25rem;
-
-    &::after {
+    &::before {
       left: 2rem;
     }
   }
 
   // STAISTICS END //
-
-  // STAISTICS START //
 
   // FOOTER START //
   .copyright {

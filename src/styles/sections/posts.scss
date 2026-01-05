@@ -1,0 +1,51 @@
+@use "../variables" as var;
+
+.posts-wrapper {
+  margin-top: 2.5rem;
+  row-gap: 2.125rem;
+  .card {
+    border: none;
+    border-radius: 0.625rem;
+
+    img {
+      border-radius: 0.625rem;
+    }
+
+    .card-body {
+      padding: 1rem 1.5rem;
+
+      .card-title {
+        margin: 0;
+        font-size: 1.125rem;
+        font-weight: 700;
+        color: var.$brand-black;
+      }
+    }
+
+    .card-tag {
+      position: absolute;
+      top: 0.625rem;
+      right: 0.75rem;
+      background: var.$brand-white;
+      padding: 0.25rem 1.25rem;
+      border-radius: 10px;
+      font-size: 0.813rem;
+      font-weight: 700;
+      color: var.$brand-black;
+    }
+  }
+}
+
+.btn-wrapper {
+  margin-top: 2.125rem;
+
+  button {
+    padding: 0.25rem 2rem;
+    border-radius: 0.625rem;
+    border: 1px solid var.$brand-white;
+    background: var.$brand-white;
+    color: var.$brand-black;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+}

@@ -1,10 +1,5 @@
 @use "../variables" as var;
 
-.section-title {
-  font-size: clamp(1.5rem, 1.3rem + 1vw, 2.5rem);
-  font-weight: 900;
-}
-
 .topic-content {
   margin-top: 2.188rem;
 

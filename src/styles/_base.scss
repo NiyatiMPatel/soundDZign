@@ -75,6 +75,11 @@ section {
   padding-right: 0 !important;
 }
 
+.section-title {
+  font-size: clamp(1.5rem, 1.3rem + 1vw, 2.5rem);
+  font-weight: 900;
+}
+
 .eyeshadow::after {
   content: "";
   width: 60px;
@@ -83,4 +88,8 @@ section {
   position: absolute;
   bottom: -8px;
   left: 0;
+}
+
+.eyeshadow-yellow::after {
+  background-color: var.$brand-yellow;
 }

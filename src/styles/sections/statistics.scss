@@ -1,7 +1,8 @@
 @use "../variables" as var;
 
 .stats-content {
-  &::after {
+  row-gap: 5.25rem;
+  &::before {
     content: "";
     position: absolute;
     width: 88px;
