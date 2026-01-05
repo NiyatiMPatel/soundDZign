@@ -1,15 +1,31 @@
-import React from "react";
+import { testimonials } from "../constants/constants";
 
 const Testimonials = () => {
   return (
     <section id="testimonials">
       <div className="container">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-        tempore animi, illo blanditiis tempora iste ipsam explicabo autem beatae
-        obcaecati repellendus reiciendis ullam eum modi aliquid veritatis rerum.
-        Soluta distinctio deleniti rerum facere amet, error, quia totam quod
-        numquam est eos a ratione consequuntur! Sit soluta nostrum distinctio
-        cumque autem.
+        <h2 className="eyeshadow  position-relative section-title">
+          What our students say?
+        </h2>
+        <div className="row testimoninal-wrapper">
+          {testimonials.map(({ id, src, user_name, review }) => (
+            <div className="col-12 col-lg-4" key={id}>
+              <div className="card h-100 border-0 bg-transparent">
+                <div className="row g-0">
+                  <div className="col-12 col-md-2 col-lg-12 img-col">
+                    <img src={src} alt={user_name} className="rounded" />
+                  </div>
+                  <div className="col-12 col-md-8 col-lg-12">
+                    <div className="card-body">
+                      <h5 className="card-title">{user_name}</h5>
+                      <p className="card-text">{review}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
