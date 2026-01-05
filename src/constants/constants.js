@@ -16,6 +16,15 @@ import FbIcon from "../assets/fb-icon.svg?react";
 import TwitterIcon from "../assets/twitter-icon.svg?react";
 import InstaIcon from "../assets/insta-icon.svg?react";
 
+// NAVBAR MENU START //
+export const navLinks = [
+ { name: 'About', href: '#hero' },
+ { name: 'Course Details', href: '#topics' },
+ { name: 'Blog', href: '#posts' },
+ { name: 'Testimonials', href: '#testimonials' },
+];
+// NAVBAR MENU END //
+
 // TOPICS SECTION CONTENT START //
 export const topics = [
  {
