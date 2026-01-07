@@ -1,26 +1,16 @@
 import BrandLogo from "../component/BrandLogo";
-import { social_media, footer_data } from "../constants/constants";
+import { social_media, footer_data, currentYear } from "../constants/constants";
 import List from "../component/List";
 import FooterColumn from "../component/FooterColumn";
 
-const currentYear = new Date().getFullYear();
 const Footer = () => {
   return (
-    <section id="footer">
+    <footer id="footer">
       <div className="container">
         <div className="row justify-content-between gap-5 gap-md-0">
           {/* Brand & Socials */}
           <div className="col-12 col-md-3">
             <BrandLogo />
-            {/* <ul className="d-flex align-items-center gap-3 social-list">
-                {social_media.map(({ id, link, Icon }) => (
-                  <li key={id}>
-                    <a href={link}>
-                      <Icon width={32} height={32} />
-                    </a>
-                  </li>
-                ))}
-              </ul> */}
             <List
               items={social_media}
               className="d-flex align-items-center gap-3 social-list"
@@ -33,32 +23,6 @@ const Footer = () => {
               }}
             />
           </div>
-          {/* <div className="col-12 col-md-3">
-            <div className="col-wrapper">
-              <h6 className="footer-title">Quick Links</h6>
-              <ul className="footer-list">
-                <li className="mb-2">Blog</li>
-                <li>Privacy Policy</li>
-              </ul>
-            </div>
-          </div>
-          <div className="col-12 col-md-3">
-            <div className="col-wrapper">
-              <h6 className="footer-title">Contact Us</h6>
-              <ul className="footer-list">
-                <li className="mb-2">
-                  <a className="text-white" href="mailto:contact@email.com">
-                    contact@email.com
-                  </a>
-                </li>
-                <li>
-                  <a className="text-white" href="tel:+19999999999">
-                    +1 999 999 999
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div> */}
           {/* Dynamic Columns */}
           <FooterColumn
             title="Quick Links"
@@ -90,7 +54,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </section>
+    </footer>
   );
 };
 

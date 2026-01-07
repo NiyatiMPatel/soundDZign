@@ -18,10 +18,10 @@ import InstaIcon from "../assets/insta-icon.svg?react";
 
 // NAVBAR MENU START //
 export const navLinks = [
- { name: 'About', href: '#hero' },
- { name: 'Course Details', href: '#topics' },
- { name: 'Blog', href: '#posts' },
- { name: 'Testimonials', href: '#testimonials' },
+ { name: 'About', href: 'hero' },
+ { name: 'Course Details', href: 'topics' },
+ { name: 'Blog', href: 'posts' },
+ { name: 'Testimonials', href: 'testimonials' },
 ];
 // NAVBAR MENU END //
 
@@ -144,6 +144,7 @@ export const social_media = [
 // SOCIAL MEDIA END //
 
 // FOOTER LINKS START //
+export const currentYear = new Date().getFullYear();
 export const footer_data = {
  quickLinks: [
   { id: 'blog', label: 'Blog', href: '#' },

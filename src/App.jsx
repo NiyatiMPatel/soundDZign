@@ -1,5 +1,6 @@
 import { lazy, Suspense } from "react";
 
+const Header = lazy(() => import("./sections/Header"));
 const Hero = lazy(() => import("./sections/Hero"));
 const Topics = lazy(() => import("./sections/Topics"));
 const Statistics = lazy(() => import("./sections/Statistics"));
@@ -10,6 +11,7 @@ const Footer = lazy(() => import("./sections/Footer"));
 const App = () => {
   return (
     <Suspense fallback={<div>Loading...</div>}>
+      <Header />
       <Hero />
       <Topics />
       <Statistics />

@@ -21,10 +21,6 @@
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(3, 0.9fr);
 
-      header {
-        grid-column: 1/3;
-      }
-
       .hero-content {
         grid-column: 2/3;
       }
@@ -121,10 +117,6 @@
     .grid-parent {
       grid-template-columns: 1fr;
       grid-template-rows: repeat(2, 1fr);
-
-      header {
-        grid-column: 1/2;
-      }
 
       .hero-content {
         grid-column: 1/2;

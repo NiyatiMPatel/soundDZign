@@ -1,8 +1,10 @@
 @use "../variables" as var;
 
 header {
-  grid-column: 1/4;
-  padding-top: 24px;
+  position: fixed;
+  top: 1.5rem;
+  z-index: 2000;
+  width: 100%;
 }
 
 .navbar {
